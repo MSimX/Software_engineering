@@ -18,15 +18,15 @@ int main() {
 
 	cout << endl << endl;
 	
-	int n;
+	int g;
 	cout << "Введите количество случайных чисел: ";
-	cin >> n;
+	cin >> g;
 
 	// Устанавливаем начальное значение для генератора случайных чисел
 	srand(static_cast<unsigned int>(time(0)));
 
 	// Генерируем и выводим 'n' случайных чисел
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < g; i++) {
 		int randomNumber = getRandomNumber(1, 100); // Генерация чисел в диапазоне от 1 до 100
 		cout << randomNumber << " ";
 	}
