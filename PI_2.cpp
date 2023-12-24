@@ -8,32 +8,28 @@ using namespace std;
 
 int main()
 {
-    double n;
-    cout << "Enter the angel in degrees" << endl; cin >> n;
-    cout << endl;
+    float a;
+    double b;
+    long double c;
 
     cout.precision(1000000);
 
-    // Выполнение вычислений для чисел одинарной точности (float)
-    cout << "sin: " << sinf(n) << endl;
-    cout << "cos: " << cosf(n) << endl;
-    cout << "tan: " << tanf(n) << endl;
-    cout << "cot: " << 1.0f / tanf(n) << endl << endl;
+    cout << "sinf: " << sinf(a) << endl;
+    cout << "sin : " << sin(b) << endl;
+    cout << "sinl: " << sinl(c) << endl << endl;
+    
+    cout << "cosf: " << cosf(a) << endl;
+    cout << "cos : " << cos(b) << endl;
+    cout << "cosl: " << cosl(c) << endl << endl;
+    
+    cout << "tanf: " << tanf(a) << endl;
+    cout << "tan : " << tan(b) << endl;
+    cout << "tanl: " << tanl(c) << endl;
 
-    // Выполнение вычислений для чисел двойной точности (double)
 
-    cout << "sin: " << sin(n) << endl;
-    cout << "cos: " << cos(n) << endl;
-    cout << "tan: " << tan(n) << endl;
-    cout << "cot: " << 1.0 / tan(n) << endl << endl;
-
-    // Выполнение вычислений для чисел 4-кратной точности (long double)  
-
-    cout << setprecision(std::numeric_limits<long double>::digits10 + 1);
-    cout << "sin: " << sinl(n) << endl;
-    cout << "cos: " << cosl(n) << endl;
-    cout << "tan: " << tanl(n) << endl;
-    cout << "cot: " << 1.0L / tanl(n) << endl << endl;
+    cout << "cotf: " << 1.0f / tanf(a) << endl;
+    cout << "cot : " << 1.0 / tan(b) << endl;
+    cout << "cotl: " << 1.0L / tanl(c) << endl;
 
     system("pause");
 
