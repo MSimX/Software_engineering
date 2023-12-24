@@ -14,8 +14,7 @@ int main(){
 	summ = a + b;
 	proizv = a * b;
 	vichet = a - b;
-	delen_ostatok = a % b;
-	delen_celoe = a / b;
+	delen_celoe = (double)a / b;
 	cout << "summa = a + b = " << summ << endl
 		<< "proizvedenie = a * b = " << proizv << endl 
 		<< "vichetanie = a - b = " << vichet << endl
